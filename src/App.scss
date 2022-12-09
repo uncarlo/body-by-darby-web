@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "minerva-modern";   /*Can be any text*/
+    src: local("minerva-modern"),
+      url("/fonts/minerva-open.otf") format("opentype");
+  }
+
+* {
+    font-family: "minerva-modern";
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 400;
+}

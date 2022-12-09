@@ -1,0 +1,46 @@
+@import "src/assets/styles/variables.scss";
+
+.header-wrapper {
+    background-color: $main-blue;
+    color: white;
+
+    .menu {
+        padding-top: 50px;
+        display: flex;
+
+        .menu-left,
+        .menu-right {
+            width: 30%;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            li {
+                float: left;
+                margin: 0 30px;
+            }
+        }
+
+        .logo {
+            flex-grow: 1;
+            text-align: center;
+
+            img {
+                width: 250px;
+            }
+        }
+    }
+
+    .title {
+        text-align: center;
+    }
+}
