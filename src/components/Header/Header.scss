@@ -24,7 +24,6 @@
         }
 
         a {
-            cursor: pointer;
             margin: 0 8px;
             white-space: nowrap;
             letter-spacing: 2px;
@@ -52,7 +51,47 @@
 
 .separator {
     background: $accent-color;
-    margin: 30px auto;
+    margin: 45px auto;
     height: 1px;
     width: 60%;
+}
+
+.social-media-wrapper {
+    text-align: center;
+
+    .social-media-links {
+        a {
+            font-size: 33px;
+            margin: 9px;
+        }
+    }
+
+    .google-review {
+        margin-top: 15px;
+        font-size: 24px;
+        text-align: center;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 5px;
+        }
+
+        .google-logo {
+            width: 40px;
+        }
+
+        .google-stars {
+            width: 100px;
+        }
+    }
+}
+
+.biz-info {
+    text-align: center;
+    margin-bottom: 100px;
+
+    h3 {
+        font-style: italic;
+    }
 }

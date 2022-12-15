@@ -15,8 +15,24 @@ body {
     color: $accent-color;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-size: 72px;
+  font-weight: 200;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 200;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-size: 34px;
   font-weight: 200;
   letter-spacing: -1px;
 }
