@@ -1,14 +1,38 @@
+@import "src/assets/styles/variables.scss";
+
 @font-face {
     font-family: "minerva-modern";   /*Can be any text*/
     src: local("minerva-modern"),
       url("/fonts/minerva-open.otf") format("opentype");
   }
 
+body {
+  background-color: $main-background-color;
+}
+
 * {
     font-family: "minerva-modern";
+    color: $accent-color;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1 {
-  font-size: 70px;
-  font-weight: 400;
+  font-size: 72px;
+  font-weight: 200;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 200;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-size: 34px;
+  font-weight: 200;
+  letter-spacing: -1px;
 }
