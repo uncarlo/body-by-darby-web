@@ -4,7 +4,7 @@ import './HomePage.scss';
 
 class HomePage extends Component {
     render() {
-        return <div>HomePage works!</div>;
+        return <div>HomePage is working!</div>;
     }
 }
 
