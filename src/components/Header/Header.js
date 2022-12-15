@@ -11,24 +11,24 @@ class Header extends Component {
             <div className="header-wrapper">
                 <div className="menu">
                     <div className="menu-left">
-                        <ul>
-                            <li><a>Welcome</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>About Darby</a></li>
-                        </ul>
+                        <a>Welcome</a>
+                        <a>Services</a>
+                        <a>About Darby</a>
                     </div>
                     <div className='logo'>
                         <img src={logo} />
                     </div>
                     <div className="menu-right">
-                        <ul>
-                            <li><a>Testimonials</a></li>
-                            <li><a>Contact</a></li>
-                            <li><a>Blog</a></li>
-                        </ul>
+                        <a>Testimonials</a>
+                        <a>Contact</a>
+                        <a>Blog</a>
                     </div>
                 </div>
                 <div className="title"><h1>{this.title}</h1></div>
+            </div>
+            <div className='separator'></div>
+            <div className="social-media-wrapper">
+
             </div>
         </>;
     }

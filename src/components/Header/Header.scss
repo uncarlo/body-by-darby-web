@@ -1,33 +1,33 @@
 @import "src/assets/styles/variables.scss";
 
 .header-wrapper {
-    background-color: $main-blue;
-    color: white;
-
+    
     .menu {
-        padding-top: 50px;
+        padding-top: 38px;
         display: flex;
+
+        .menu-left {
+            padding-left:30px;
+            text-align: left;
+        }
+        .menu-right {
+            padding-right:30px;
+            text-align: right;
+        }
 
         .menu-left,
         .menu-right {
-            width: 30%;
-            font-size: 18px;
+            width: 37%;
+            font-size: 15px;
             text-transform: uppercase;
+            padding-top: 100px;
         }
 
         a {
             cursor: pointer;
-        }
-
-        ul {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-
-            li {
-                float: left;
-                margin: 0 30px;
-            }
+            margin: 0 8px;
+            white-space: nowrap;
+            letter-spacing: 2px;
         }
 
         .logo {
@@ -35,12 +35,24 @@
             text-align: center;
 
             img {
-                width: 250px;
+                width: 213px;
             }
         }
     }
 
     .title {
         text-align: center;
+
+        h1 {
+            margin-top: 50px;
+            margin-bottom: 0px;
+        }
     }
+}
+
+.separator {
+    background: $accent-color;
+    margin: 30px auto;
+    height: 1px;
+    width: 60%;
 }
