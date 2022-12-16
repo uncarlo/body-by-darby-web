@@ -1,12 +1,15 @@
 import './App.scss';
-import HomePage from './pages/HomePage/HomePage';
+import Services from './components/Services/Services';
 import Header from './components/Header/Header';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
   return (
     <>
-      <Header />
-      <HomePage />
+      <ParallaxProvider>
+        <Header />
+        <Services />
+      </ParallaxProvider>
     </>
   );
 }
