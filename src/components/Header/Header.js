@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import { FaFacebookF, FaInstagram, FaYelp, FaYoutube } from "react-icons/fa";
+import { ParallaxBanner } from 'react-scroll-parallax';
 
 import './Header.scss';
 import logo from '../../assets/images/logo.png';
 import gLogo from '../../assets/images/google-review/glogo.png';
 import gStars from '../../assets/images/google-review/gstars.png';
 import btnBookNow from '../../assets/images/button-booknow.png';
+import parallaxImage from '../../assets/images/pictures/header-image-1.jpg';
+
 
 class Header extends Component {
+
     title = "Body By Darby"
 
     render() {
@@ -55,6 +59,14 @@ class Header extends Component {
                     <img src={btnBookNow} alt="book now" />
                 </a>
             </div>
+            <ParallaxBanner
+                className='parallax-wrapper'
+                layers={[
+                    {
+                        image: parallaxImage,
+                        speed: -40
+                    }]}>
+            </ParallaxBanner>
         </>;
     }
 }

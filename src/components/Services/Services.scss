@@ -1,0 +1,14 @@
+@import "src/assets/styles/variables.scss";
+
+.services {
+    padding: 120px 240px;
+    background-color: $accent-color;
+
+    * {
+        color: $accent-dark-color;
+    }
+
+    p {
+        font-size: 23px;
+    }
+}

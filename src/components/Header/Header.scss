@@ -1,17 +1,16 @@
 @import "src/assets/styles/variables.scss";
 
 .header-wrapper {
-    
     .menu {
         padding-top: 38px;
         display: flex;
 
         .menu-left {
-            padding-left:30px;
+            padding-left: 30px;
             text-align: left;
         }
         .menu-right {
-            padding-right:30px;
+            padding-right: 30px;
             text-align: right;
         }
 
@@ -93,5 +92,12 @@
 
     h3 {
         font-style: italic;
+    }
+}
+
+.parallax-wrapper {
+    height: 850px;
+    div {
+        background-size: contain !important;
     }
 }
