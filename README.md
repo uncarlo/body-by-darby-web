@@ -15,22 +15,26 @@ npm start
 
 ## To containerize and upload to AWS
 
-#### 1. Authenticate (Only needed once)
-```
-aws ecr get-login-password --region us-west-1 | docker login --username AWS --password-stdin 489017049965.dkr.ecr.us-west-1.amazonaws.com
-```
-
-#### 2. Build container
+#### 1. Build container
 ```
 docker build -t bodybydarbyweb .
 ```
 
-#### 3. Tag Image
+#### 2. Tag Image
 ```
 docker tag bodybydarbyweb:latest 489017049965.dkr.ecr.us-west-1.amazonaws.com/bodybydarbyweb:latest
+```
+
+#### 3. Authenticate (Needed on first run, or when the token expires)
+```
+aws ecr get-login-password --region us-west-1 | docker login --username AWS --password-stdin 489017049965.dkr.ecr.us-west-1.amazonaws.com
 ```
 
 ### 4. Push to AWS
 ```
 docker push 489017049965.dkr.ecr.us-west-1.amazonaws.com/bodybydarbyweb:latest
 ```
+
+### 5. Servers
+
+- [Staging](http://54.151.75.87/)
