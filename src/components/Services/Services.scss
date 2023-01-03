@@ -1,14 +1,29 @@
 @import "src/assets/styles/variables.scss";
 
 .services {
-    padding: 120px 240px;
+    padding: 40px 100px;
     background-color: $accent-color;
 
-    * {
+    :not(button) {
         color: $accent-dark-color;
     }
 
-    p {
-        font-size: 23px;
+    p, span, strong {
+        font-size: 22px;        
+    }
+
+    .header {
+        padding: 0 190px;
+    }
+
+    .content {
+        margin-top: 80px;
+    }
+
+    .booking {
+        text-align: center;
+        p {
+            font-size: 26px;
+        }
     }
 }
