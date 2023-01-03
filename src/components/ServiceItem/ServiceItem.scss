@@ -1,0 +1,39 @@
+@import "src/assets/styles/variables.scss";
+
+.service-item {
+    display: flex;
+    .image {
+        img {
+            height: 210px;
+            width: 168px;
+            object-fit: cover;
+        }
+    }
+
+    .item-content {
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+
+        .pricing {
+            text-transform: uppercase;
+        }
+
+        .info {
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+
+        margin-left: 20px;
+    }
+}
+
+.separator {
+  background-color: $soft-accent-color!important;
+}

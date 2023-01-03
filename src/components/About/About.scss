@@ -1,0 +1,11 @@
+@import "src/assets/styles/variables.scss";
+
+.about {
+    padding: 40px 100px;
+    background-color: $soft-background-color;
+
+    p {
+        font-size: 25px;
+        color: darken($accent-dark-color, 10%);
+    }
+}

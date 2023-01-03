@@ -1,6 +1,8 @@
 import './App.scss';
 import Services from './components/Services/Services';
 import Header from './components/Header/Header';
+import About from './components/About/About';
+
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
       <ParallaxProvider>
         <Header />
         <Services />
+        <About />
       </ParallaxProvider>
     </>
   );
