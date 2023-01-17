@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import BlogPage from './pages/BlogPage/BlogPage';
 import HomePage from './pages/HomePage/HomePage';
 import Header from './components/Header/Header';
+import BlogPost from './components/BlogPost/BlogPost';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -14,8 +15,19 @@ function App() {
 
   useEffect(() => {
     if (header !== null) {
-      let isTitleVisible = location.pathname !== '/blog';
-      header.setState({ isTitleVisible : isTitleVisible });
+      const pathname = location.pathname;
+      let isTitleVisible = true;
+
+      switch (pathname) {
+        case '/blog':
+        case '/blog-post':
+          isTitleVisible = false;
+          break;
+        default:
+          break;
+      }
+
+      header.setState({ isTitleVisible: isTitleVisible });
     }
   }, [location, header])
 
@@ -25,6 +37,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog-post" element={<BlogPost />} />
       </Routes>
       <Footer></Footer>
     </>

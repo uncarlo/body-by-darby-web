@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NavigateComponent from '../Navigation/NavigateComponent';
 
 import './BlogItem.scss';
 
@@ -11,7 +12,10 @@ class BlogItem extends Component {
                     <p className="title">{this.props.title}</p>
                     <p className="date">{this.props.date}</p>
                     <p className="description">{this.props.description}</p>
-                    <button onClick={this.props.onClick}>Continue Reading...</button>
+                    <NavigateComponent
+                        title="Continue Reading..."
+                        onclick={this.props.onclick}>
+                    </NavigateComponent>
                 </div>
             </div>
         </>;
