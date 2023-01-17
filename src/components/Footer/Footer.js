@@ -6,7 +6,7 @@ class Footer extends Component {
     render() {
         return <>
             <div className="footer">
-                <div class="content">
+                <div className="content">
                     Darby Hanson, CMP, RYT
                     <br />
                     Call or Text to make an appointment

@@ -5,6 +5,14 @@ import logo from '../../assets/images/logo.png';
 
 class Header extends Component {
 
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            isTitleVisible: true
+        };
+    }
+
     title = "Body By Darby"
 
     render() {
@@ -26,7 +34,7 @@ class Header extends Component {
                     </div>
                 </div>
 
-                {!this.props.showTitle ?
+                {this.state.isTitleVisible ?
                     <div className="title"><h1>{this.title}</h1></div>
                     :
                     <></>

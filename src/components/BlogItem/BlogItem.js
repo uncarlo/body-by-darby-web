@@ -6,16 +6,13 @@ class BlogItem extends Component {
 
     render() {
         return <>
-            <div className="blog-item">
-                <div className="image">
-                    <img src={this.props.imgSrc} alt="item-img" />
+            <div className="blog-item-wrapper">
+                <div className="overlay">
+                    <p className="title">{this.props.title}</p>
+                    <p className="date">{this.props.date}</p>
+                    <p className="description">{this.props.description}</p>
+                    <button onClick={this.props.onClick}>Continue Reading...</button>
                 </div>
-                <p className="title">{this.props.title}</p>
-                <p className="date">{this.props.date}</p>
-                <p className="description">{this.props.description}</p>
-                <a href={this.props.learnMore} target="_blank" rel="noreferrer">
-                    <button>Continue Reading...</button>
-                </a>
             </div>
         </>;
     }
