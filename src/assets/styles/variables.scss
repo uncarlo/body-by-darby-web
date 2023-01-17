@@ -1,6 +1,12 @@
+// colors
+
 $main-background-color: #1b4453;
 $soft-background-color: #668793;
 $accent-color: #FFF;
 $accent-dark-color: #1b4555;
 $accent-darker-color: darken($accent-dark-color, 10%);
 $soft-accent-color: #ddd;
+
+// dimensions & margins
+$outter-content-padding: 40px 100px;
+$inner-content-max-width: 840px;

@@ -4,6 +4,8 @@ import Header from './components/Header/Header';
 import About from './components/About/About';
 
 import { ParallaxProvider } from 'react-scroll-parallax';
+import Testimonials from './components/Testimonials/Testimonials';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <Header />
         <Services />
         <About />
+        <Testimonials />
+        <Footer />
       </ParallaxProvider>
     </>
   );

@@ -4,13 +4,15 @@
     display: flex;
     .image {
         img {
-            height: 210px;
-            width: 168px;
+            height: 260px;
+            width: 178px;
             object-fit: cover;
         }
     }
 
     .item-content {
+        padding-left: 17px;
+
         .title {
             font-size: 32px;
             font-weight: bold;
