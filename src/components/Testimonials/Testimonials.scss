@@ -1,25 +1,38 @@
 @import "src/assets/styles/variables.scss";
 
-.about {
+.testimonials {
+    background-color: $accent-color;
     padding: $outer-content-padding;
-    background-color: $soft-background-color;
 
-    .about-text {
-        margin: 0 auto;
-        max-width: $inner-content-max-width;
-        padding-bottom: 90px;
+    * {
+        color: $accent-dark-color;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 0;
     }
 
     p {
-        font-size: 24px;
-        color: darken($accent-dark-color, 10%);
+        margin: 35px auto;
+        max-width: $inner-content-max-width;
+        font-size: 30px;
+    }
+
+    .from {
+        font-weight: bold;
+    }
+
+    .separator {
+        width: 30%;
+        margin: 60px auto;
     }
 
     .image-container {
         display: flex;
         margin:0 auto;
         width: auto;
-        max-width: 1300px;
+        max-width: 95%;
         justify-content: center;
         
         div:nth-of-type(2) {

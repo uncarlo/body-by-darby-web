@@ -1,0 +1,45 @@
+@import "src/assets/styles/variables.scss";
+
+.blog-item-wrapper {
+    text-align: center;
+    height: 550px;
+    position: relative;
+    background-image: url(../../assets/images/pictures/darby/darby-2.jpg);
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: fit;
+
+    :not(button) {
+        color: $accent-dark-color;
+        margin: 0;
+    }
+
+    .overlay {
+        background-color: rgb(100%, 100%, 100%, 65%);
+        padding: 10px 10px 15px 10px;
+        position: absolute;
+        bottom: 0;
+
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    
+        .date {
+            margin-top: 2px;
+        }
+    
+        .description {
+            font-size: 21px;
+            margin: 10px 0 20px;
+        }
+
+        button {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 20px;
+            background-color: $main-background-color;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import "src/assets/styles/variables.scss";
+
+.blog-wrapper {
+    background-color: $accent-color;
+    padding: 80px 40px;
+    
+    .blog{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 50px;
+
+        .blog-item {
+            width: 30%;
+        }
+    }
+}

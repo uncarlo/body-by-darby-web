@@ -16,7 +16,7 @@ class Services extends Component {
 
     render() {
         return <>
-            <div className="services">
+            <div id="services" className="services">
                 <div className="header">
                     <h1>
                         Services
