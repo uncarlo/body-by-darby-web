@@ -1,5 +1,11 @@
 @import "src/assets/styles/variables.scss";
 
-.blog-warpper {
+.blog-wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
     background-color: $accent-color;
+    padding: 80px 40px;
 }
