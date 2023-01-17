@@ -8,7 +8,7 @@ import './BlogPage.scss';
 
 class BlogPage extends Component {
     
-    navigateToBlogPost() {
+    navigateToBlogArticle() {
         console.log('handle click on blogpage')
     }
 
@@ -23,7 +23,7 @@ class BlogPage extends Component {
                             date="November 15, 2022"
                             description="Hi, I’m Darby Dooda Hanson. I’m a Certified Massage Practitioner, Cranial Sacral Therapist..."
                             learnMore="/blog/meet-darby"
-                            onclick={this.navigateToBlogPost} />
+                            onclick={this.navigateToBlogArticle} />
                     </div>
                 </div>
             </div>

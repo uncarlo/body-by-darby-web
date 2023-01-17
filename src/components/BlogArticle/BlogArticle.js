@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import darbyPic2 from '../../assets/images/pictures/darby/darby-2.jpg';
 import Social from '../Social/Social'
 
-import './BlogPost.scss';
+import './BlogArticle.scss';
 
-class BlogPost extends Component {
+class BlogArticle extends Component {
 
     render() {
         return <>
@@ -43,4 +43,4 @@ class BlogPost extends Component {
     }
 }
 
-export default BlogPost;
+export default BlogArticle;

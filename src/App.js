@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import BlogPage from './pages/BlogPage/BlogPage';
 import HomePage from './pages/HomePage/HomePage';
 import Header from './components/Header/Header';
-import BlogPost from './components/BlogPost/BlogPost';
+import BlogArticle from './components/BlogArticle/BlogArticle';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/blog" element={<BlogPage />} />
-        <Route path="/blog-post" element={<BlogPost />} />
+        <Route path="/blog-post" element={<BlogArticle />} />
       </Routes>
       <Footer></Footer>
     </>
