@@ -2,7 +2,7 @@
 
 .header-wrapper {
     .menu {
-        padding-top: 38px;
+        padding: 38px 250px 0;
         display: flex;
 
         .menu-left {
@@ -45,21 +45,5 @@
             margin-top: 50px;
             margin-bottom: 0px;
         }
-    }
-}
-
-.biz-info {
-    text-align: center;
-    margin-bottom: 100px;
-
-    h3 {
-        font-style: italic;
-    }
-}
-
-.parallax-wrapper {
-    height: 850px;
-    div {
-        background-size: contain !important;
     }
 }

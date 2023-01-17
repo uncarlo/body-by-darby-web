@@ -2,6 +2,10 @@
 
 .service-item {
     display: flex;
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 30px;
+
     .image {
         img {
             height: 260px;

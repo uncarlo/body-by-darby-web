@@ -1,7 +1,7 @@
 @import "src/assets/styles/variables.scss";
 
 .services {
-    padding: 40px 40px;
+    padding: 40px 0;
     background-color: $accent-color;
 
     :not(button) {
@@ -9,10 +9,12 @@
     }
 
     p, span, strong {
-        font-size: 22px;        
+        font-size: 22px;
     }
 
     .header {
+        margin: 0 auto;
+        max-width: $inner-content-max-width;
         padding: 0 190px;
     }
 
