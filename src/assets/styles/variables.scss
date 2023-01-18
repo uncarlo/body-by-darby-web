@@ -2,10 +2,16 @@
 
 $main-background-color: #1b4453;
 $soft-background-color: #668793;
+
 $accent-color: #FFF;
-$accent-dark-color: #1b4555;
-$accent-darker-color: darken($accent-dark-color, 10%);
-$soft-accent-color: #ddd;
+
+$dark-accent-color: #1b4555;
+$darker-accent-color: darken($dark-accent-color, 10%);
+$darkest-accent-color: darken($dark-accent-color, 25%);
+
+$soft-accent-color: darken($accent-color, 50%);
+$softer-accent-color: darken($accent-color, 25%);
+$softest-accent-color: darken($accent-color, 3%);
 
 // dimensions & margins
 $outer-content-padding: 40px 100px;

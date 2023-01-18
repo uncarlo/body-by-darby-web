@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { ParallaxBanner } from 'react-scroll-parallax';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
-import './Subheader.scss';
 import btnBookNow from '../../assets/images/button-booknow.png';
 import parallaxImage from '../../assets/images/pictures/header-image-1.jpg';
 import Social from '../Social/Social';
 
+import './Subheader.scss';
 
 class Subheader extends Component {
 
@@ -14,30 +14,32 @@ class Subheader extends Component {
 
     render() {
         return <>
-            <div className='separator'></div>
+            <div className="subheader-wrapper">
+                <div className="separator"></div>
 
-            <Social />
+                <Social />
 
-            <div className="biz-info">
-                <h1>Holistic Bodywork</h1>
-                <h2>Craniosacral Therapy · Yoga · Therapeutic Massage</h2>
-                <h3>Serving all of San Diego</h3>
+                <div className="biz-info">
+                    <h1>Holistic Bodywork</h1>
+                    <h2>Craniosacral Therapy · Yoga · Therapeutic Massage</h2>
+                    <h3>Serving all of San Diego</h3>
 
-                <a href="https://bodybydarby.com/booking" target="_blank" rel="noreferrer">
-                    <img src={btnBookNow} alt="book now" />
-                </a>
-            </div>
-            <ParallaxProvider>
-                <ParallaxBanner
-                    className='parallax-wrapper'
-                    layers={[
-                        {
-                            image: parallaxImage,
-                            speed: -40
-                        }]}>
-                </ParallaxBanner>
-            </ParallaxProvider>
-        </>;
+                    <a href="https://bodybydarby.com/booking" target="_blank" rel="noreferrer">
+                        <img src={btnBookNow} alt="book now" />
+                    </a>
+                </div>
+                <ParallaxProvider>
+                    <ParallaxBanner
+                        className='parallax-wrapper'
+                        layers={[
+                            {
+                                image: parallaxImage,
+                                speed: -40
+                            }]}>
+                    </ParallaxBanner>
+                </ParallaxProvider>
+            </div>;
+        </>
     }
 }
 

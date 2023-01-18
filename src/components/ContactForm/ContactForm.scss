@@ -1,0 +1,42 @@
+.contact-form-wrapper {
+    .form-table {
+        width: 100%;
+
+        input {
+            width: 100%;
+        }
+
+        td {
+            padding: 0 0 10px 0;
+            font-size: 20px;
+
+            input {
+                margin-top: 5px;
+            }
+        }
+
+        .name-cell {
+            padding: 0;
+        }
+
+        .last-name {
+            padding-left: 30px;
+        }
+
+        .first-name,
+        .last-name {
+            input {
+                margin-bottom: 3px;
+            }
+            label {
+                font-size: 14px;
+            }
+        }
+
+        .error {
+            margin-left: 10px;
+            color: red;
+            font-size: 15px;
+        }
+    }
+}
