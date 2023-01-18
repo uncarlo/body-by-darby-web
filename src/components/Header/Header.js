@@ -29,7 +29,7 @@ class Header extends Component {
                     </div>
                     <div className="menu-right">
                         <a href="/#testimonials">Testimonials</a>
-                        <a href="/">Contact</a>
+                        <a href="/contact">Contact</a>
                         <a href="/blog">Blog</a>
                     </div>
                 </div>

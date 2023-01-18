@@ -7,10 +7,6 @@ import BlogItem from '../../components/BlogItem/BlogItem';
 import './BlogPage.scss';
 
 class BlogPage extends Component {
-    
-    navigateToBlogArticle() {
-        console.log('handle click on blogpage')
-    }
 
     render() {
         return <>
@@ -22,8 +18,7 @@ class BlogPage extends Component {
                             title="Meet Darby"
                             date="November 15, 2022"
                             description="Hi, I’m Darby Dooda Hanson. I’m a Certified Massage Practitioner, Cranial Sacral Therapist..."
-                            learnMore="/blog/meet-darby"
-                            onclick={this.navigateToBlogArticle} />
+                            link="/blog-post" />
                     </div>
                 </div>
             </div>

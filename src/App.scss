@@ -37,7 +37,8 @@ h3 {
   letter-spacing: -1px;
 }
 
-button {
+button,
+input[type='submit'] {
   background-color: $soft-background-color;
   color: $accent-color;
   font-size: 24px;
@@ -46,6 +47,15 @@ button {
   padding: 21px 34px;
   border: none;
   cursor: pointer;
+}
+
+input[type='text'],
+.inputMask {
+  background-color: $softest-accent-color;
+  border: 1px solid $softer-accent-color;
+  padding: 10px;
+  font-size: 18px;
+  color: $darkest-accent-color;
 }
 
 .separator {

@@ -8,12 +8,14 @@ import HomePage from './pages/HomePage/HomePage';
 import Header from './components/Header/Header';
 import BlogArticle from './components/BlogArticle/BlogArticle';
 import Footer from './components/Footer/Footer';
+import ContactPage from './pages/ContactPage/ContactPage';
 
 function App() {
   const location = useLocation();
   let header = null;
 
   useEffect(() => {
+    // [CT]: Navigation event
     if (header !== null) {
       const pathname = location.pathname;
       let isTitleVisible = true;
@@ -21,7 +23,6 @@ function App() {
       switch (pathname) {
         case '/blog':
         case '/blog-post':
-          isTitleVisible = false;
           break;
         default:
           break;
@@ -38,6 +39,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog-post" element={<BlogArticle />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer></Footer>
     </>

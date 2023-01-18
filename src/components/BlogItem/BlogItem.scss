@@ -4,14 +4,20 @@
     text-align: center;
     height: 550px;
     position: relative;
-    background-image: url(../../assets/images/pictures/darby/darby-2.jpg);
+    min-width: 300px;
     background-position: 50% 60%;
     background-repeat: no-repeat;
     background-size: fit;
 
     :not(button) {
-        color: $accent-dark-color;
+        color: $dark-accent-color;
         margin: 0;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 
     .overlay {
