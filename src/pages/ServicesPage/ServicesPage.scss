@@ -1,0 +1,39 @@
+@import "src/assets/styles/variables.scss";
+
+.services-page-wrapper {
+    background-color: $contrast-background-color;
+    padding: $outer-content-padding;
+
+    * {
+        color: $darkest-accent-color;
+    }
+
+    h1 {
+        text-align: center;
+        color: $dark-accent-color;
+    }
+
+    .image-container {
+        text-align: center;
+        height: 400px;
+        width: 100%;
+        margin-bottom: 60px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .content {
+        margin: 0 auto;
+        width: $inner-content-max-width;
+        font-size: 24px;
+    }
+
+    .book-now {
+        margin: 60px 0;
+        text-align: center;
+    }
+}

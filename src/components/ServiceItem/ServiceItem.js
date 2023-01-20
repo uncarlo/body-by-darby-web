@@ -15,7 +15,7 @@ class ServiceItem extends Component {
                     <p className="pricing">{this.props.pricing}</p>
                     <p className="info">{this.props.additionalInfo}</p>
                     <p className="description">{this.props.description}</p>
-                    <a href={this.props.learnMore} target="_blank" rel="noreferrer">
+                    <a href={this.props.learnMore} >
                         <button>Learn More...</button>
                     </a>
                 </div>

@@ -24,7 +24,7 @@ class Subheader extends Component {
                     <h2>Craniosacral Therapy · Yoga · Therapeutic Massage</h2>
                     <h3>Serving all of San Diego</h3>
 
-                    <a href="https://bodybydarby.com/booking" target="_blank" rel="noreferrer">
+                    <a href="/booking" target="_blank" rel="noreferrer">
                         <img src={btnBookNow} alt="book now" />
                     </a>
                 </div>
@@ -38,7 +38,7 @@ class Subheader extends Component {
                             }]}>
                     </ParallaxBanner>
                 </ParallaxProvider>
-            </div>;
+            </div>
         </>
     }
 }

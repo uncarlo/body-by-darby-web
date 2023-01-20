@@ -33,7 +33,7 @@ class ContactForm extends Component {
 
     sendContact() {
         const emails = JSON.parse(process.env.REACT_APP_CONTACT_FORM_EMAILS);
-        emailjs.send('bodybydarby', 'template_tgpqm24', { toEmail: emails[1], ... this.state.fields }, 'LbFysx24GAsUXR1yG' )
+        emailjs.send('bodybydarby', 'template_tgpqm24', { toEmail: emails[1], ...this.state.fields }, 'LbFysx24GAsUXR1yG')
             .then(() => {
                 this.setState({
                     fields: {

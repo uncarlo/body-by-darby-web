@@ -1,0 +1,12 @@
+@import "src/assets/styles/variables.scss";
+
+.booking-wrapper {
+    height: 1750px;
+    width: 100%;
+
+    .frame {
+        border: none;
+        width: 100%;
+        height: 100%;
+    }
+}
