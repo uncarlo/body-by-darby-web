@@ -32,49 +32,49 @@ class Services extends Component {
                         pricing="90 Minutes $150"
                         additionalInfo="SomatoEmotional Release | Virtual Option"
                         description="Cranial Sacral Therapy is a light touch modality that taps into the subtle flexion and extension of the skeletal system, cerebral spinal fluid movement, and the nervous system. The practitioner supports the body's self-healing regulatory system with a sophisticated hands-on method to restore homeostasis to the whole being."
-                        learnMore="/cranial-sacral-therapy" />
+                        learnMore="/services/cranial-sacral-therapy" />
                     <ServiceItem
                         imgSrc={signatureMassage}
                         title="Signature Massage"
                         pricing="90 Minutes $150"
                         additionalInfo=""
                         description="Beautiful blend of energy healing, therapeutic massage, cranial sacral therapy technique. Get ready to be blissed out with this a total energetic, emotional, mental and physical clearing. Plan for a restful night of integration after this totally transcendent liberation."
-                        learnMore="/signature-massage" />
+                        learnMore="/services/signature-massage" />
                     <ServiceItem
                         imgSrc={yogaSession}
                         title="Yoga Session"
                         pricing="75 Minutes $120 | Virtual Option | Packages Available"
                         additionalInfo=""
                         description="Gentle trauma-conscious yoga calms the autonomic nervous system and gently releases emotional and physical trauma trapped in the body. Through powerful asana, pranayama, and meditation my yoga teaching style brings a distinct sense of self-empowerment and peace of mind."
-                        learnMore="/yoga-session" />
+                        learnMore="/services/yoga-session" />
                     <ServiceItem
                         imgSrc={assistedStretch}
                         title="Assisted Deep Stretch"
                         pricing="30 Minutes $60"
                         additionalInfo=""
                         description=" Gentle yet deep assisted stretching will help to reduce the risk of injuries, regain mobility, improve flexibility, improve range of motion."
-                        learnMore="/assisted-deep-stretch" />
+                        learnMore="/services/assisted-deep-stretch" />
                     <ServiceItem
                         imgSrc={guidedBreathwork}
                         title="Guided Breathwork Session"
                         pricing="60 Minutes $120 | Virtual Option"
                         additionalInfo=""
                         description="Blend of healing breath techniques tailored to the clients specific needs. Reverse chest breathing, process emotional blockages, reduce anxiety and stress, and increase wellbeing and joy."
-                        learnMore="/guided-breathwork-session" />
+                        learnMore="/services/guided-breathwork-session" />
                     <ServiceItem
                         imgSrc={chakraBalancing}
                         title="Chakra Balancing / Energy Healing"
                         pricing="60 Minutes $120 | Virtual Option"
                         additionalInfo=""
                         description="Powerful, non-invasive treatment to align and balance the chakra system. Energy work encompasses a wide range of techniques and practices. It is rooted in the principle that body is bioenergetic and seeks to maintain balance. Energy healing, or energy work, seeks to restore, promote, and maintain health and wellness to all those elements by influencing and supporting the body’s bioenergies."
-                        learnMore="/chakra-balancing-energy-healing" />
+                        learnMore="/services/chakra-balancing-energy-healing" />
                     <ServiceItem
                         imgSrc={guidedMeditation}
                         title="Guided Meditation"
                         pricing="60 Minutes $120 | 120 Minutes $150"
                         additionalInfo="Connect deeply to the peace of who you are. Clear, easy and practical application of meditation that can be implemented into everyday life."
                         description=""
-                        learnMore="/guided-meditation" />
+                        learnMore="/services/guided-meditation" />
                 </div>
                 <div className="booking">
                     <h2>Book Your Session</h2>
