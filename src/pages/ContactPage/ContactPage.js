@@ -21,7 +21,7 @@ class ContactPage extends Component {
                         760-702-2588
                         or click the button below.
                     </p>
-                    <a href="https://bodybydarby.com/booking" target="_blank" rel="noreferrer">
+                    <a href="/booking" target="_blank" rel="noreferrer">
                         <img src={btnBookNow} alt="book now" />
                     </a>
                     <h2>

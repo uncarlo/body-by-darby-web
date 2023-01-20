@@ -78,7 +78,7 @@ class Services extends Component {
                 </div>
                 <div className="booking">
                     <h2>Book Your Session</h2>
-                    <a href="https://bodybydarby.com/booking" target="_blank" rel="noreferrer">
+                    <a href="/booking" target="_blank" rel="noreferrer">
                         <img src={btnBookNow} alt="book now" />
                     </a>
                     <p>

@@ -36,7 +36,7 @@ function ServicesPage() {
             </div>
             <div className="separator" />
             <div className="book-now">
-                <a href="https://bodybydarby.com/booking" target="_blank" rel="noreferrer">
+                <a href="/booking" target="_blank" rel="noreferrer">
                     <img src={btnBookNow} alt="book now" />
                 </a>
             </div>

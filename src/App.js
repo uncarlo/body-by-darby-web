@@ -10,6 +10,7 @@ import BlogArticle from './components/BlogArticle/BlogArticle';
 import Footer from './components/Footer/Footer';
 import ContactPage from './pages/ContactPage/ContactPage';
 import ServicesPage from './pages/ServicesPage/ServicesPage';
+import BookingPage from './pages/BookingPage/BookingPage';
 
 function App() {
   const location = useLocation();
@@ -42,6 +43,7 @@ function App() {
         <Route path="/blog-post" element={<BlogArticle />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route exact path="/services/:serviceName" element={<ServicesPage />} />
+        <Route path="/booking" element={<BookingPage />} />
       </Routes>
       <Footer></Footer>
     </>
