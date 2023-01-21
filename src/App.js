@@ -1,7 +1,6 @@
 import './App.scss';
 
-import { Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 
 import BlogPage from './pages/BlogPage/BlogPage';
 import HomePage from './pages/HomePage/HomePage';
@@ -13,30 +12,9 @@ import ServicesPage from './pages/ServicesPage/ServicesPage';
 import BookingPage from './pages/BookingPage/BookingPage';
 
 function App() {
-  const location = useLocation();
-  let header = null;
-
-  useEffect(() => {
-    // [CT]: Navigation event
-    if (header !== null) {
-      const pathname = location.pathname;
-      let isTitleVisible = true;
-
-      switch (pathname) {
-        case '/blog':
-        case '/blog-post':
-          break;
-        default:
-          break;
-      }
-
-      header.setState({ isTitleVisible: isTitleVisible });
-    }
-  }, [location, header])
-
   return (
     <>
-      <Header ref={(ref) => header = ref} isTitleVisible="true"></Header>
+      <Header></Header>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/blog" element={<BlogPage />} />
