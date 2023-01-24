@@ -21,6 +21,12 @@
     }
 
     @media screen and (max-width: 767px) {
+
+        .separator {
+            margin-top: 0;
+            width: 30%;
+        }
+
         .parallax-wrapper {
             .parallax-banner {
                 height: 550px;
