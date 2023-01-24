@@ -44,8 +44,8 @@ function Header() {
             </div>
             <div className="menu">
                 <div className="menu-left">
-                    <a href='/#welcome' onClick={handleToggleMenu}>Welcome</a>
-                    <a href='/#services' onClick={handleToggleMenu}>Services</a>
+                    <a href='/#welcome'>Welcome</a>
+                    <a href='/#services'>Services</a>
                     <a href='/#about'>About</a>
                 </div>
                 <div className='logo'>
