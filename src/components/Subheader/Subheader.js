@@ -28,16 +28,18 @@ class Subheader extends Component {
                         <img src={btnBookNow} alt="book now" />
                     </a>
                 </div>
-                <ParallaxProvider>
-                    <ParallaxBanner
-                        className='parallax-wrapper'
-                        layers={[
-                            {
-                                image: parallaxImage,
-                                speed: -40
-                            }]}>
-                    </ParallaxBanner>
-                </ParallaxProvider>
+                <div className="parallax-wrapper">
+                    <ParallaxProvider>
+                        <ParallaxBanner
+                            className="parallax-banner"
+                            layers={[
+                                {
+                                    image: parallaxImage,
+                                    speed: -40
+                                }]}>
+                        </ParallaxBanner>
+                    </ParallaxProvider>
+                </div>
             </div>
         </>
     }
