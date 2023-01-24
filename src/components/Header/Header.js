@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { useLockedBody } from 'usehooks-ts'
 
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 import logo from '../../assets/images/logo.png';
 import btnBookNow from '../../assets/images/button-booknow.png';
@@ -9,11 +10,17 @@ import './Header.scss';
 
 function Header() {
 
+    const [locked, setLocked] = useLockedBody()
+
+    const toggleLocked = () => {
+        setLocked(!locked)
+    }
+
     const [menuOpen, setMenuOpen] = useState(false)
 
     const handleToggleMenu = () => {
         setMenuOpen(prev => !prev)
-        
+        toggleLocked();
     };
 
     const title = "Body By Darby"
@@ -22,7 +29,7 @@ function Header() {
         <div id="welcome" className="header-wrapper">
             <div className={`resp-menu-panel ${menuOpen ? "show-menu" : ""}`}>
                 <div className="separator" />
-                <ul>
+                <ul  onClick={handleToggleMenu}>
                     <li><a href='/#welcome'>Welcome</a></li>
                     <li><a href='/#services'>Services</a></li>
                     <li><a href='/#about'>About</a></li>
@@ -37,8 +44,8 @@ function Header() {
             </div>
             <div className="menu">
                 <div className="menu-left">
-                    <a href='/#welcome'>Welcome</a>
-                    <a href='/#services'>Services</a>
+                    <a href='/#welcome' onClick={handleToggleMenu}>Welcome</a>
+                    <a href='/#services' onClick={handleToggleMenu}>Services</a>
                     <a href='/#about'>About</a>
                 </div>
                 <div className='logo'>
@@ -51,18 +58,25 @@ function Header() {
                 </div>
             </div>
 
-            <div className="resp-menu">
-                <button onClick={handleToggleMenu}>
+            <div className="resp-menu-button">
+                <button
+                    className={`resp-menu-button-open ${menuOpen ? "hide" : ""}`}
+                    onClick={handleToggleMenu}>
                     <FaBars />
+                </button>
+                <button
+                    className={`resp-menu-button-closed ${menuOpen ? "" : "hide"}`}
+                    onClick={handleToggleMenu}>
+                    <FaTimes />
                 </button>
             </div>
 
             <div className="resp-logo">
                 <img alt="logo" src={logo} />
             </div>
-            
+
             <div className="title"><h1>{title}</h1></div>
-            
+
         </div>
     </>;
 }

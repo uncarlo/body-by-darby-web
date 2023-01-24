@@ -5,16 +5,14 @@
     width: 100%;
 
     .menu {
-        padding: 38px 250px 50px;
+        margin: 30px 30px;
         display: flex;
 
         .menu-left {
-            padding-left: 30px;
             text-align: left;
         }
 
         .menu-right {
-            padding-right: 30px;
             text-align: right;
         }
 
@@ -50,11 +48,9 @@
         }
     }
 
-    .resp-logo {
-        display: none;
-    }
-
-    .resp-menu {
+    .resp-logo,
+    .resp-menu-button,
+    .resp-menu-panel {
         display: none;
     }
 
@@ -73,7 +69,7 @@
             }
         }
 
-        .resp-menu {
+        .resp-menu-button {
             display: block;
             position: absolute;
             top: 25px;
@@ -85,9 +81,25 @@
                 padding: 0;
                 margin: 0;
             }
+
+            .resp-menu-button-open,
+            .resp-menu-button-closed {
+                position: absolute;
+                opacity: 1;
+
+                -webkit-transition: opacity 150ms ease-in-out;
+                -moz-transition: opacity 150ms ease-in-out;
+                -o-transition: opacity 150ms ease-in-out;
+                transition: opacity 150ms ease-in-out;
+
+                &.hide {
+                    opacity: 0;
+                }
+            }
         }
 
         .resp-menu-panel {
+            display: block;
             height: 100%;
             width: 0%;
             position: absolute;
@@ -95,10 +107,10 @@
             right: 0;
             background-color: $contrast-background-color;
 
-            -webkit-transition: width 150ms ease-in-out;
-            -moz-transition: width 150ms ease-in-out;
-            -o-transition: width 150ms ease-in-out;
-            transition: width 150ms ease-in-out;
+            -webkit-transition: width 75ms ease-in-out;
+            -moz-transition: width 75ms ease-in-out;
+            -o-transition: width 75ms ease-in-out;
+            transition: width 75ms ease-in-out;
 
             a {
                 font-size: 40px;
