@@ -29,7 +29,7 @@ function Header() {
         <div id="welcome" className="header-wrapper">
             <div className={`resp-menu-panel ${menuOpen ? "show-menu" : ""}`}>
                 <div className="separator" />
-                <ul  onClick={handleToggleMenu}>
+                <ul onClick={handleToggleMenu}>
                     <li><a href='/#welcome'>Welcome</a></li>
                     <li><a href='/#services'>Services</a></li>
                     <li><a href='/#about'>About</a></li>
