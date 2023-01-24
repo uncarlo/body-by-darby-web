@@ -25,6 +25,7 @@ class Services extends Component {
                         Darby Hanson is a holistic practitioner specializing in <strong>Craniosacral Therapy, Energy Work, Therapeutic Massage, and Yoga.</strong> She strives to cultivate a space that harvests a unique and authentic personal experience of self and holds space for personal alignment, transformation, and rejuvenation.
                     </p>
                 </div>
+                <div className="separator"></div>
                 <div className="content">
                     <ServiceItem
                         imgSrc={cranioSacral}

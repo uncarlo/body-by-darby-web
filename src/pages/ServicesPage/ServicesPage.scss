@@ -32,8 +32,34 @@
         font-size: 24px;
     }
 
+    .separator {
+        background-color: $soft-accent-color;
+    }
+
     .book-now {
         margin: 60px 0;
         text-align: center;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 20px 20px 40px;
+
+        .content {
+            margin: 0 auto;
+            width: auto;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .book-now {
+            margin: 0;
+            text-align: center;
+        }
+
+        .separator {
+            width: 30%;
+        }
     }
 }
