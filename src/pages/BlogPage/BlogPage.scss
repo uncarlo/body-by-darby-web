@@ -13,4 +13,18 @@
             width: 30%;
         }
     }
+
+    @media screen and (max-width: 767px) {
+        padding: 40px 40px;
+
+        .blog {
+            margin-top: 0;
+            flex-flow: column;
+            gap: 25px;
+
+            .blog-item {
+                width: 100%;
+            }
+        }
+    }
 }

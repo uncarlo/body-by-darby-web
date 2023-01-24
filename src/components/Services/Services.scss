@@ -28,4 +28,19 @@
             font-size: 26px;
         }
     }
+
+    @media screen and (max-width: 767px) {
+        .header {
+            padding: 0 20px;
+
+            p, strong {
+                line-height: 1.5;
+                font-size: 25px;
+            }
+        }
+
+        .booking {
+            padding: 0 20px;
+        }
+    }
 }

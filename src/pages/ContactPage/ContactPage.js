@@ -21,9 +21,11 @@ class ContactPage extends Component {
                         760-702-2588
                         or click the button below.
                     </p>
-                    <a href="/booking" target="_blank" rel="noreferrer">
-                        <img src={btnBookNow} alt="book now" />
-                    </a>
+                    <div className="contact-panel">
+                        <a href="/booking" target="_blank" rel="noreferrer">
+                            <img src={btnBookNow} alt="book now" />
+                        </a>
+                    </div>
                     <h2>
                         Location
                     </h2>

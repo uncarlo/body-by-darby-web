@@ -1,20 +1,18 @@
 @import "src/assets/styles/variables.scss";
 
 .header-wrapper {
-
     padding-bottom: 40px;
+    width: 100%;
 
     .menu {
-        padding: 38px 250px 50px;
+        margin: 30px 30px;
         display: flex;
 
         .menu-left {
-            padding-left: 30px;
             text-align: left;
         }
-        
+
         .menu-right {
-            padding-right: 30px;
             text-align: right;
         }
 
@@ -47,6 +45,114 @@
 
         h1 {
             margin: 0;
+        }
+    }
+
+    .resp-logo,
+    .resp-menu-button,
+    .resp-menu-panel {
+        display: none;
+        visibility: hidden;
+    }
+
+    @media screen and (max-width: 767px) {
+        .menu {
+            display: none;
+        }
+
+        .resp-logo {
+            display: block;
+            visibility: visible;
+            padding: 20px 0;
+            text-align: center;
+
+            img {
+                width: 100px;
+            }
+        }
+
+        .resp-menu-button {
+            display: block;
+            visibility: visible;
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            z-index: 1;
+
+            button {
+                padding: 8px 12px 6px 12px;
+                font-size: 28px;
+                border-radius: 12px;
+                background: none;
+                filter: drop-shadow(1px 1px 2px $soft-accent-color);
+            }
+
+            .resp-menu-button-open,
+            .resp-menu-button-closed {
+                position: absolute;
+                opacity: 1;
+
+                -webkit-transition: opacity 150ms ease-in-out;
+                -moz-transition: opacity 150ms ease-in-out;
+                -o-transition: opacity 150ms ease-in-out;
+                transition: opacity 150ms ease-in-out;
+
+                &.hide {
+                    opacity: 0;
+                }
+            }
+        }
+
+        .resp-menu-panel {
+            display: block;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 0%;
+            background-color: $contrast-background-color;
+            z-index: 1;
+
+            -webkit-transition: width 75ms ease-in-out;
+            -moz-transition: width 75ms ease-in-out;
+            -o-transition: width 75ms ease-in-out;
+            transition: width 75ms ease-in-out;
+
+            a {
+                display: none;
+                margin-bottom: 10px;
+                font-size: 40px;
+                color: $dark-accent-color;
+            }
+
+            ul {
+                display: none;
+            }
+
+            .booking {
+                text-align: center;
+            }
+        }
+
+        & .show-menu {
+            display: block;
+            visibility: visible;
+            width: 80%;
+
+            a,
+            ul {
+                display: block;
+            }
+        }
+
+        .title {
+            text-align: center;
+
+            h1 {
+                margin: 0;
+                font-size: 60px;
+                word-wrap: break-word;
+            }
         }
     }
 }

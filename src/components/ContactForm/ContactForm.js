@@ -125,7 +125,7 @@ class ContactForm extends Component {
             const phoneNo = fields["phoneNo"].replace('(', '').replace(')', '').replace('-', '').replace(' ', '');
             const isValidNumber = validator.isMobilePhone(phoneNo);
             if (!isValidNumber) {
-                errors["phoneNo"] = "* invalid";
+                errors["phoneNo"] = "* is not valid";
             }
         }
 
@@ -255,9 +255,9 @@ class ContactForm extends Component {
                             </tr>
                         </tbody>
                     </table>
-
-                    <input type="submit" value="Submit" />
-
+                    <div className="submit-btn">
+                        <input type="submit" value="Submit" />
+                    </div>
                 </form>
             </div>
         </>
