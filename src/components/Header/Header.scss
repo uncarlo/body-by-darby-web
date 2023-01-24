@@ -74,15 +74,17 @@
         .resp-menu-button {
             display: block;
             visibility: visible;
-            position: absolute;
-            top: 25px;
-            left: 25px;
-            font-size: 25px;
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            z-index: 1;
 
             button {
+                padding: 8px 12px 6px 12px;
+                font-size: 28px;
+                border-radius: 12px;
                 background: none;
-                padding: 0;
-                margin: 0;
+                filter: drop-shadow(1px 1px 2px $soft-accent-color);
             }
 
             .resp-menu-button-open,
@@ -103,12 +105,13 @@
 
         .resp-menu-panel {
             display: block;
-            position: absolute;
+            position: fixed;
             top: 0;
             right: 0;
             height: 100%;
             width: 0%;
             background-color: $contrast-background-color;
+            z-index: 1;
 
             -webkit-transition: width 75ms ease-in-out;
             -moz-transition: width 75ms ease-in-out;
@@ -116,10 +119,14 @@
             transition: width 75ms ease-in-out;
 
             a {
-                display: block;
+                display: none;
                 margin-bottom: 10px;
                 font-size: 40px;
                 color: $dark-accent-color;
+            }
+
+            ul {
+                display: none;
             }
 
             .booking {
@@ -131,6 +138,11 @@
             display: block;
             visibility: visible;
             width: 80%;
+
+            a,
+            ul {
+                display: block;
+            }
         }
 
         .title {

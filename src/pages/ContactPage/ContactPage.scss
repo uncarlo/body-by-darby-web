@@ -20,4 +20,17 @@
         height: 400px;
         width: 100%;
     }
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        .contact-panel {
+            text-align: center;
+        }
+    }
 }
