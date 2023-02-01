@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import ContactPage from './pages/ContactPage/ContactPage';
 import ServicesPage from './pages/ServicesPage/ServicesPage';
 import BookingPage from './pages/BookingPage/BookingPage';
+import ErrorPage from './pages/ErrorPage/ErrorPage';
 
 import './App.scss';
 
@@ -42,6 +43,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route exact path="/services/:serviceName" element={<ServicesPage />} />
         <Route path="/booking" element={<BookingPage />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer></Footer>
     </>

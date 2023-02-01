@@ -1,0 +1,12 @@
+@import "src/assets/styles/variables.scss";
+
+.error-page-wrapper {
+    background-color: white;
+    padding: $outer-content-padding;
+    height: 350px;
+
+    p, li {
+        color: $darkest-accent-color;
+        font-size: 24px;
+    }
+}
